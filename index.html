@@ -6,11 +6,10 @@
     <title>Bio Shield | All Natural Insect Repellent!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
+<header>
 <nav class="main-nav">
-    <img src="images/bioshield.jpg" width="180" height="160" usemap="#bioS">
+    <img src="images/bioshield.jpg" width="160" usemap="#bioS">
         <map name="bioS">
             <area shape="rect" coords="0,0,180,180" href="index.html" alt="Bio Shield logo">
         </map>
@@ -24,7 +23,73 @@
         <input type="text" placeholder="search..." id="search-bar">
     </div>
 </nav>  
+</header>
 
+<main>
+    <div class="">
+        <div class="mySlides">
+          <img src="" alt="Slide 1" />
+        </div>
+    
+        <div class="mySlides">
+          <img src="" alt="Slide 2" />
+        </div>
+    
+        <div class="mySlides">
+          <img src="" alt="Slide 3" />
+        </div>
+    
+        <!-- Controls -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+    
+      <!-- Dots -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    <script>
+        let slideIndex = 1;
+        let slideTimer;
+    
+        function showSlides(n) {
+          const slides = document.getElementsByClassName("mySlides");
+          const dots = document.getElementsByClassName("dot");
+    
+          if (n > slides.length) { slideIndex = 1; }
+          if (n < 1) { slideIndex = slides.length; }
+    
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+    
+          for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+    
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+    
+        function plusSlides(n) {
+          clearInterval(slideTimer);
+          showSlides(slideIndex += n);
+          slideTimer = setInterval(() => plusSlides(1), 3000);
+        }
+    
+        function currentSlide(n) {
+          clearInterval(slideTimer);
+          showSlides(slideIndex = n);
+          slideTimer = setInterval(() => plusSlides(1), 3000);
+        }
+    
+        // Initialize
+        showSlides(slideIndex);
+        slideTimer = setInterval(() => plusSlides(1), 3000);
+    </script>
+</main>
 </body>
 
 </html>

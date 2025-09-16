@@ -2,6 +2,8 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background: #111;
+    display: flex;
 }
 
 nav {
@@ -13,7 +15,7 @@ nav {
     width: 100%;
     max-width: 250px;
     border: none;
-    border-radius: 4px;
+    border-radius: 0px;
     font-size: 16px;
 }
 
@@ -24,6 +26,7 @@ nav {
 
     display: flex;
     justify-content:space-between;
+    align-items: center;
 
 }
 
@@ -39,4 +42,60 @@ nav {
 
 .main-nav a:hover {
     color: yellow;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+
+  .mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s ease;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0 3px 3px 0;
+    z-index: 10;
+}
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
 }
