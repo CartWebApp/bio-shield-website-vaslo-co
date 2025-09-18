@@ -8,15 +8,6 @@ nav {
     background-color: green;
 }
 
-#searchbar {
-    padding: 8px;
-    width: 100%;
-    max-width: 250px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
 .main-nav {
     list-style-type: none;
     margin: 0;
@@ -24,7 +15,8 @@ nav {
 
     display: flex;
     justify-content:space-between;
-
+    align-items: center;
+    gap: 1rem;
 }
 
 .main-nav li {
@@ -39,4 +31,74 @@ nav {
 
 .main-nav a:hover {
     color: yellow;
+}
+
+.main-nav .search-container input,
+main-nav input[type="search"] {
+    width: auto;
+    max-width: 200px;
+}
+
+
+body {
+    text-align: center;
+}
+
+textarea, input[type="text"], input[type="email"], input[type="password"] {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+body {
+    background-color: rgb(37, 100, 37);
+}
+section ul {
+    display: inline-block;
+    text-align: left;     
+    margin: 0.5rem auto;  
+}
+
+/* comment form styling */
+form.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    text-align: left;
+}
+
+form.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    min-height: 140px;
+}
+
+#charCount {
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 6px 0 12px;
+    text-align: right;
+}
+
+/* keep submit button visible and centered */
+form.contact-form input[type="submit"] {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    background: #004400;
+    color: #fff;
+    cursor: pointer;
 }
