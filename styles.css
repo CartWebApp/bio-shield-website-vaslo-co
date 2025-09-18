@@ -3,7 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background: #86b084f4;
-    display: flex;
+    display:block;
+    width: 100%;
 }
 
 nav {
@@ -12,11 +13,8 @@ nav {
 }
 
 #searchbar {
-    padding: 8px;
     width: 100%;
-    max-width: 250px;
     border: none;
-    border-radius: 0px;
     font-size: 16px;
 }
 
@@ -26,6 +24,7 @@ nav {
     border:0;
     padding: 0;
 
+
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -33,16 +32,25 @@ nav {
 
 }
 
-.main-nav li {
-    padding: 15px 20px;
+.main-nav li{
+    padding: 15px 30px;
 }
 
 .main-nav a {
     text-decoration: none;
     color: white;
-    font-size: 80px;
+    font-size: 40px;
 }
 
 .main-nav a:hover {
     color: yellow;
+}
+
+.main-nav input, #cart, #sign  {
+    translate: -20px;
+}
+
+.products > img {
+    padding: 20px;
+    width: 150px;
 }
