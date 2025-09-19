@@ -2,7 +2,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: #86b084f4;
+    background: rgba(134, 176, 132, 0.957);
     display:block;
     width: 100%;
 }
@@ -25,8 +25,6 @@ nav {
     margin: 0;
     border:0;
     padding: 0;
-
-
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -52,6 +50,7 @@ nav {
 main-nav input[type="search"] {
     width: auto;
     max-width: 200px;
+    translate: 0px;
 }
 
 
@@ -115,8 +114,12 @@ form.contact-form input[type="submit"] {
     cursor: pointer;
 }
 
-.main-nav input, #sign  {
-    translate: -50px;
+.main-nav input, #sign{
+    translate: -3rem;
+}
+
+#cart {
+    translate: -1.5rem;
 }
 
 .products > img {
