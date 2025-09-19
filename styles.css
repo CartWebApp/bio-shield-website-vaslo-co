@@ -115,11 +115,7 @@ form.contact-form input[type="submit"] {
 }
 
 .main-nav input, #sign{
-    translate: -3rem;
-}
-
-#cart {
-    translate: -1.5rem;
+    translate: -4rem;
 }
 
 .products > img {
