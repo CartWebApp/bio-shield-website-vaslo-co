@@ -23,7 +23,10 @@
         <figure class="search-container">
             <input type="text" placeholder="search..." id="search-bar">
         </figure>
-        <img id="cart" src="images/cart.jpg" width="50px" alt="shopping cart">
+        <img id="cart" src="images/cart.jpg" width="50px" alt="shopping cart" usemap="#cart">
+        <map name="cart">
+            <area shape="rect" coords="0,0,50,50" href="/faux-cart/index.html" alt="shopping cart">
+        </map>
         <form action="sign-in.html">
             <button id="sign">Sign In</button>
         </form>
@@ -31,7 +34,7 @@
 </header>
 
 <main>
-
+<p>Here's where you can find more facts about our products! If you want to buy them, click <em>here</em> or click on the cart image at the top of the website!</p>
 <figure class="products">
     <img src="images/lotion.jpg" alt="lotion">
     
