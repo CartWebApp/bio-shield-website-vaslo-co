@@ -131,7 +131,7 @@ h2 {
 
 .container {
     width: 100%;
-    display: inline-flex;
+    display: inline-block;
     align-content:space-between;
     justify-content: center;
 }
@@ -145,5 +145,78 @@ h2 {
 }
 
 #space {
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 500px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out, z-index 0.5s ease-in-out;
+}
+
+/* Initially hide the register form behind the login form */
+#register-form {
+    z-index: 1;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* When active, move the register form into view */
+#register-form.active {
+    z-index: 2;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Initially show the login form */
+#login-form {
+    z-index: 2;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* When inactive, move the login form out of view */
+#login-form.inactive {
+    z-index: 1;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.toggle-buttons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
