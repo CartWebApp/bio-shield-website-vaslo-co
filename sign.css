@@ -115,12 +115,35 @@ h2 {
     background-color: #0056b3;
 }
 
-nav > textarea, input[type="text"] {
-    width: 70%;
+#search-bar {
+    width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+.main-nav input, #sign{
+    translate: -4rem;
+}
+
+.container {
+    width: 100%;
+    display: inline-flex;
+    align-content:space-between;
+    justify-content: center;
+}
+
+#SPACE {
+    padding-bottom: 3rem;
+}
+
+#room {
+    padding-bottom: 1.5rem;
+}
+
+#space {
+    padding-bottom: 1rem;
 }

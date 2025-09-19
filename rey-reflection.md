@@ -1,2 +1,2 @@
-My Chat GPT prompts: How do I make a navigation bar for my website?
-Google Gemini: HTML and CSS to create a sign in and sign up page for my website
+My Chat GPT prompts: 1. How do I make a navigation bar for my website?
+Google Gemini: 1. HTML and CSS to create a sign in and sign up page for my website. 2. Give the Javascript to toggle the visibility of the sign in and sign up form. If the sign in form is visible, then the sign up form is behind the sign in form. If the sign up form is visible, then the sign in form is behind the sign up form.
