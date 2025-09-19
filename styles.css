@@ -79,7 +79,6 @@ section ul {
     margin: 0.5rem auto;  
 }
 
-/* comment form styling */
 form.contact-form label {
     display: block;
     font-weight: 600;
@@ -122,4 +121,10 @@ form.contact-form input[type="submit"] {
     padding: 20px;
     width: 150px;
 
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+    padding-left: 0
 }

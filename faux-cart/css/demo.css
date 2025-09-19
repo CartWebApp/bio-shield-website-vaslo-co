@@ -22,8 +22,8 @@ body {
 }
 
 .product {
-    border: solid 1px black;
-    background-color: white;
+    border: solid 1px rgb(134, 176, 132, 0.957);
+    background-color: rgb(134, 176, 132, 0.957);
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
     position: relative;
@@ -31,7 +31,7 @@ body {
 
 .product:hover,
 .cartItem:hover {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 5px rgba(0,0,0);
 }
 
 .prodImage {
@@ -55,8 +55,8 @@ body {
 #emptyCart {
     display: block;
     float: right;
-    background-color: dodgerblue;
-    color: white;
+    background-color: rgb(4, 92, 36);
+    color: rgb(255, 255, 0);
     padding: 1em;
     text-decoration: none;
     border-radius: 0.5em;
@@ -64,18 +64,18 @@ body {
 }
 
 .prodBtn:hover {
-    background-color: black;
-    color: yellow;
+    background-color: rgb(50, 205, 50);
+    color: rgb(255, 255, 0);
 }
 
 .removeBtn,
 #emptyCart {
-    background-color: black;
+    background-color: rgb(0,0, 128);
 }
 
 .qtyBtn {
-    background-color: gray;
-    color: white;
+    background-color: grey;
+    color: rgb(245, 245, 245);
     border: none;
     padding: 0.2em 0.5em;
     margin: 0 0.2em;
@@ -91,7 +91,7 @@ body {
 
 .removeBtn:hover,
 #emptyCart:hover {
-    background-color: red;
+    background-color: rgb(50, 205, 50);
 }
 
 #emptyCart {
@@ -148,17 +148,17 @@ h2 {
 }
 
 footer,nav{
-    background: black;
+    background: rgb(0, 105, 0);
     color: white;
     padding: 2rem;
     text-align: right;
 }
 
 nav>a {
-    background-color: dodgerblue;
+    background-color: rgb(0,0, 128);
     border-radius: 0.5rem;
     padding: 1rem;
-    color: white;
+    color: rgb(255, 255, 0);
     text-decoration: none;
     transition-property: color, background-color;
     transition-duration: 500ms;
@@ -168,7 +168,7 @@ nav>a {
 
 nav>a:hover {
     color: yellow;
-    background-color: rgb(26, 118, 209);
+    background-color: rgb(50, 205, 50);
 }
 
 #cartItemCount::before {
