@@ -10,6 +10,13 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    background-image: linear-gradient(rgba(0, 80, 0, 0.6), rgba(0, 80, 0, 0.6)), url('/images/forest.jpg');
+    background-size: cover;
+}
+
+.container {
+    margin-bottom: 25rem;
+    margin-top: 5rem;
 }
 
 nav {
@@ -135,8 +142,6 @@ h2 {
 .submit-btn:hover {
     background-color: #0056b3;
 }
-
-
 
 #SPACE {
     padding-bottom: 3rem;

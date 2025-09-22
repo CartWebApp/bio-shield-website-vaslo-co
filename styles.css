@@ -15,6 +15,11 @@ nav {
     width: 100%;
 }
 
+main {
+    background-image: linear-gradient(rgba(0, 80, 0, 0.6), rgba(0, 80, 0, 0.6)), url('/images/forest.jpg');
+    background-size: cover;
+}
+
 /* --- Navigation Bar --- */
 header {
     position: sticky; /* This makes the header stick to the top */
@@ -84,8 +89,6 @@ main-nav input[type="search"] {
     max-width: 200px;
     translate: 0px;
 }
-
-
 
 
 textarea, input[type="text"], input[type="email"], input[type="password"] {
@@ -174,6 +177,8 @@ ul {
     max-width: 900px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 25rem;
+    margin-top: 5rem;
 }
 .contact-info {
     background-color: #005a00;
