@@ -8,6 +8,7 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <div id="popup-notification" class="popup"></div>
     <header>
         <nav class="main-nav">
             <img src="images/bioshield.jpg" width="120" usemap="#bioS" alt="Bio Shield Logo">
@@ -46,7 +47,9 @@
                     <label for="signin-password">Password</label>
                     <input type="password" id="signin-password" required>
                 </figure>
-                <button type="submit" class="submit-btn" >Sign In</button>
+                <button type="submit" class="submit-btn">Sign In</button>
+                
+                <button type="button" id="show-signup" class="toggle-btn">Don't have an account? Sign Up</button>
             </form>
         </div>
 
@@ -66,15 +69,11 @@
                     <input type="password" id="signup-password" required>
                 </figure>
                 <button type="submit" class="submit-btn">Sign Up</button>
+
+                <button type="button" id="show-signin" class="toggle-btn">Already have an account? Sign In</button>
             </form>
         </div>
     </figure>
-    <figure class="container">
-        <div class="toggle-buttons">
-            <button id="show-signup" class="toggle-btn">Don't have an account? Sign Up</button>
-            <button id="show-signin" class="toggle-btn">Already have an account? Sign In</button>
-        </div>
-        </figure>
 </main>
 </body>
 </html>

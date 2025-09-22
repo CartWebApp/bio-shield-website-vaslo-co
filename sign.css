@@ -1,11 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    display: block;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     background-color:rgb(134, 176, 132);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 nav {
@@ -13,13 +17,33 @@ nav {
     width: 100%;
 }
 
-#searchbar {
+/* --- ADDED/MODIFIED STYLES FOR NAV BUTTON --- */
+.nav-action-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px; /* Pill shape */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-left: 15px;
+}
+
+.nav-action-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    color: white; /* Keep text color white on hover */
+}
+
+#search-bar {
     padding:8px;
     width: 100%;
     border: none;
     font-size: 16px;
 }
-
 
 .main-nav {
     list-style-type: none;
@@ -54,14 +78,6 @@ main-nav input[type="search"] {
     translate: 0px;
 }
 
-.main-nav input, #sign{
-    translate: -4srem;
-}
-
-.container {
-    display: inline-flex;
-    gap: 40px;
-}
 
 .form-box {
     background-color: #fff;
@@ -129,13 +145,6 @@ h2 {
     translate: -4rem;
 }
 
-.container {
-    width: 100%;
-    display: inline-block;
-    align-content:space-between;
-    justify-content: center;
-}
-
 #SPACE {
     padding-bottom: 3rem;
 }
@@ -146,15 +155,6 @@ h2 {
 
 #space {
     padding-bottom: 1.2rem;
-}
-
-.container {
-    position: relative;
-    width: 400px;
-    height: 500px; /* Adjust height as needed */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .form-box {
@@ -198,13 +198,6 @@ h2 {
     pointer-events: none;
 }
 
-.toggle-buttons {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    text-align: center;
-}
-
 .toggle-btn {
     background: none;
     border: none;
@@ -214,9 +207,42 @@ h2 {
     font-weight: bold;
     padding: 10px;
     transition: color 0.3s ease;
+    margin-top: 15px;
 }
 
 .toggle-btn:hover {
     color: #0056b3;
     text-decoration: underline;
 }
+
+#cart {
+    translate: -2rem;
+}
+
+.container {
+    position: relative;
+    width: 400px;
+    height: 475px; /* Increased height slightly to fit the new button */
+}
+
+/* ADD THESE STYLES FOR THE POP-UP */
+.popup {
+    position: fixed;
+    top: -100px; /* Start hidden above the screen */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; /* A pleasant green */
+    color: white;
+    padding: 16px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 18px;
+    transition: top 0.5s ease-in-out; /* Animation for sliding in/out */
+}
+
+/* This class will be added by JavaScript to show the pop-up */
+.popup.show {
+    top: 20px; /* Slide to this position when visible */
+}
+
