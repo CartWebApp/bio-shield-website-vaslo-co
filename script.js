@@ -56,3 +56,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 3000);
     }
 });
+
+// This script makes the navigation bar hide when scrolling down and appear when scrolling up.
+
+// We start by assuming the last scroll position was at the very top of the page.
+let lastScrollY = window.scrollY;
+
+// We listen for the 'scroll' event on the window.
+window.addEventListener("scroll", () => {
+    // If the user has scrolled down the page...
+    if (lastScrollY < window.scrollY) {
+        // ...add the 'header-hidden' class to the header.
+        document.querySelector('header').classList.add("header-hidden");
+    } else {
+        // Otherwise (if the user has scrolled up)...
+        // ...remove the 'header-hidden' class.
+        document.querySelector('header').classList.remove("header-hidden");
+    }
+
+    // Finally, we update the last scroll position to the current one.
+    lastScrollY = window.scrollY;
+});
