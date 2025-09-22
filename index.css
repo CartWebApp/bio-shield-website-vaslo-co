@@ -83,17 +83,7 @@ main-nav input[type="search"] {
     translate: 0px;
 }
 
-footer {
-    background-color: rgb(0, 105, 0);
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-}
 
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
 
 /* --- Review Section --- */
 #reviews-section {
@@ -246,4 +236,16 @@ footer p {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+footer {
+    background-color: rgb(0, 105, 0);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
 }

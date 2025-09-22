@@ -17,3 +17,4 @@ Google Gemini:
 10. Make a footer for the About Us (applies to the other pages and corrected errors with it as well)
 11. Make a review page for the home page
 12. Make short product descriptions (for all 6 products)
+13. Make the appearance of the products page modern (+edits)

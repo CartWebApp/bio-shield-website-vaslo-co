@@ -87,3 +87,90 @@ main-nav input[type="search"] {
 body {
     text-align: center;
 }
+
+/* --- Main Content & Product Grid --- */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: rgb(0, 70, 0);
+}
+
+.product-grid {
+    display: grid;
+    /* This creates exactly 3 equal-width columns */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* Space between grid items */
+}
+
+/* --- Product Card Styling --- */
+.product-card {
+    background: rgba(255, 242, 0, 0.538);
+    border-radius: 15px; /* Softer corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Lifts the card on hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%; /* Make image fill the card width */
+    height: 450px; /* Set a larger, fixed height for all images */
+    object-fit: cover; /* Prevents image from stretching or distorting */
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.product-card h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: rgb(0, 70, 0);
+}
+
+.product-card p {
+    flex-grow: 1; /* Ensures all paragraphs take equal height, aligning buttons */
+    margin-bottom: 1.5rem;
+}
+
+/* --- Buy Now Button Styling --- */
+.buy-button {
+    display: inline-block;
+    background-color: rgb(0, 105, 0);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px; /* Pill shape */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color: rgb(0, 70, 0);
+    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    color: white;
+}
+
+/* --- Footer --- */
+footer {
+    margin-top: 2rem;
+    background-color: rgb(0, 105, 0);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

@@ -3,9 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background: rgba(134, 176, 132, 0.957);
-    display:block;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     line-height: 1.6;
+    text-align: center;
 }
 
 nav {
@@ -84,9 +86,7 @@ main-nav input[type="search"] {
 }
 
 
-body {
-    text-align: center;
-}
+
 
 textarea, input[type="text"], input[type="email"], input[type="password"] {
     width: 70%;
