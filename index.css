@@ -1,0 +1,249 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(134, 176, 132, 0.957);
+    display:block;
+    width: 100%;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: rgb(0, 105, 0);
+    width: 100%;
+}
+
+/* --- Navigation Bar --- */
+header {
+    position: sticky; /* This makes the header stick to the top */
+    top: 0; /* This tells it to stick at the very top of the screen */
+    z-index: 1000; /* This ensures it stays on top of other content */
+    transition: top 0.3s ease-in-out; /* Add this for a smooth animation */
+}
+
+/* This new rule hides the header when this class is applied */
+header.header-hidden {
+    top: -150px; /* Hides the header by moving it up. Adjust if your nav bar is taller. */
+}
+
+
+.nav-action-btn {
+    background-color: rgb(0, 70, 0);
+    color: white;
+    padding: 2px 16px !important; /* Reduced padding */
+    border-radius: 20px; /* Pill shape */
+    text-decoration: none;
+    font-size: 28px !important;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-right: 2rem;
+}
+
+#search-bar {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    translate: 1rem;
+    font-size: 16px;
+}
+
+.main-nav {
+    list-style-type: none;
+    margin: 0;
+    border:0;
+    padding: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+}
+
+.main-nav li{
+    padding: 15px 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+}
+
+.main-nav a:hover {
+    color: yellow;
+}
+
+
+.main-nav .search-container input,
+main-nav input[type="search"] {
+    width: auto;
+    max-width: 200px;
+    translate: 0px;
+}
+
+footer {
+    background-color: rgb(0, 105, 0);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* --- Review Section --- */
+#reviews-section {
+    max-width: 900px;
+    margin: 2rem auto; /* Centers the section and adds space */
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#reviews-section h1, #reviews-section h2 {
+    text-align: center;
+    color: rgb(0, 70, 0);
+}
+
+/* --- Individual Review Cards --- */
+.review {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review h3 {
+    margin-top: 0;
+    color: rgb(0, 105, 0);
+}
+
+.review-rating {
+    color: #f0ad4e; /* A gold/yellow color for stars */
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.review-text {
+    line-height: 1.5;
+}
+
+.review-date {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: right;
+}
+
+/* --- Review Form Styling --- */
+#review-form-container {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e0e0e0;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#review-form input[type="text"],
+#review-form select,
+#review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding and width */
+    font-size: 1rem;
+}
+
+#review-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(0, 105, 0); /* Match nav green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#review-form button:hover {
+    background-color: rgb(0, 70, 0); /* Match button hover */
+}
+
+/* --- Thank You Modal --- */
+#modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place even if the page is scrolled */
+    z-index: 2000; /* Sit on top of all other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    
+    /* Use flexbox to easily center the modal vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    background-color: #fefefe;
+    padding: 20px 30px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 450px; /* Ensures it doesn't get too wide on large screens */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    /* Animation */
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#modal h2 {
+    color: rgb(0, 105, 0); /* Match site theme */
+    margin-top: 0;
+}
+
+#close-modal-btn {
+    background-color: rgb(0, 105, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#close-modal-btn:hover {
+    background-color: rgb(0, 70, 0);
+}
+
+/* A simple fade-in animation for the modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

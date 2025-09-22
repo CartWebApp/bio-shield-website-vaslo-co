@@ -1,6 +1,8 @@
 My Chat GPT prompts: 
 1. How do I make a navigation bar for my website?
 
+DeepAI: Make a corporate logo for a company called Bio Shield, dark green and yellow, with a shield and insect
+
 
 Google Gemini:
 1. HTML and CSS to create a sign in and sign up page for my website.
@@ -13,3 +15,4 @@ Google Gemini:
 8. Analyze the HMTL and CSS of the About Us Page (make it appear modern)
 9. Make nav bar stay on top when scrolling
 10. Make a footer for the About Us (applies to the other pages and corrected errors with it as well)
+11. Make a review page for the home page

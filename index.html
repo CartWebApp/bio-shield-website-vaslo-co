@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title> 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -33,10 +33,60 @@
 </header>
 <main>
     <img id="camp" src="/images/outdoors.jpg" alt="people outdoors" width="100%">
+    <section id="reviews-section">
+        <h1>Customer Reviews</h1>
+
+        <div id="reviews-container">
+            <div class="review">
+                <h3>Sarah L.</h3>
+                <p class="review-rating">★★★★☆</p>
+                <p class="review-text">Great products! The insect repellent worked wonders on our camping trip. Highly recommend.</p>
+                <p class="review-date">September 15, 2025</p>
+            </div>
+            <div class="review">
+                <h3>Mike T.</h3>
+                <p class="review-rating">★★★★★</p>
+                <p class="review-text">I've been a customer for years. Bio Shield never disappoints. The new sunscreen is fantastic and not greasy at all.</p>
+                <p class="review-date">September 12, 2025</p>
+            </div>
+        </div>
+
+        <div id="review-form-container">
+            <h2>Leave Your Own Review</h2>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="reviewer-name">Your Name:</label>
+                    <input type="text" id="reviewer-name" name="reviewer-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="5">5 Stars ★★★★★</option>
+                        <option value="4">4 Stars ★★★★☆</option>
+                        <option value="3">3 Stars ★★★☆☆</option>
+                        <option value="2">2 Stars ★★☆☆☆</option>
+                        <option value="1">1 Star ★☆☆☆☆</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Your Review:</label>
+                    <textarea id="review-text" name="review-text" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+    </section>
+<div id="modal-overlay">
+    <div id="modal">
+        <h2>Thank You!</h2>
+        <p>Your review has been successfully submitted.</p>
+        <button id="close-modal-btn">Close</button>
+    </div>
+</div>
 </main>
     <footer>
         <p>&copy; 2025 Bio Shield</p>
     </footer>
-<script src="script.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
