@@ -27,30 +27,44 @@
         <map name="cart">
             <area shape="rect" coords="0,0,50,50" href="/faux-cart/index.html" alt="shopping cart">
         </map>
-        <form action="sign-in.html">
-            <button id="sign">Sign In</button>
-        </form>
+        <a href="sign-in.html" class="nav-action-btn">Sign In</a>
     </nav>
 </header>
 
-<main class="contact-content">
+    <main class="contact-content">
+        <div class="contact-card">
+            <!-- Left Side: Contact Information -->
+            <div class="contact-info">
+                <h1>Get in Touch</h1>
+                <p class="subtitle">We're here to help! Reach out with any questions or comments.</p>
+                
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <span>Call or Text: 559-980-2006</span>
+                </div>
+                <div class="info-item">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <a href="mailto:Bio_Shield-CustomerSupport@gmail.com">Bio_Shield-CustomerSupport@gmail.com</a>
+                </div>
+                 <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                    <span>We will attempt to reach you after one business day.</span>
+                </div>
+            </div>
 
-    <h1>Contact Us</h1>
-    <h2>Questions? Comments?</h2>
-
-    <p><strong>Our consumer product helpline is happy to help you with questions or comments about our consumer products!</strong></p>
-    <p><strong>Call <em>or</em> Text Us: </strong>559-980-2006</p>
-    <br>
-    <p>Email: <a href="mailto:Bio_Shield-CustomerSupport@gmail.com">Bio_Shield-CustomerSupport@gmail.com</a></p>
-    <p>Then, click <strong>Send</strong>. We will attempt to reach you after one business day.</p>
-
-    <form action="submit-comment.html" method="POST">
-        <label for="comment">Leave a Comment:</label><br>
-        <textarea id="comment" name="comment" rows="5" cols="40" placeholder="Type your comment here..."></textarea><br>
-        <button type="submit">Send</button>
-  </form>
-
-</main>
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form-container">
+                <form id="contact-form" action="#" method="POST">
+                    <label for="comment">Leave a Comment:</label>
+                    <textarea id="comment" name="comment" rows="6" placeholder="Type your message here..." maxlength="500"></textarea>
+                    <div id="char-count-container">
+                        <span id="char-count">0</span> / 500
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
 
 </body>
 </html>

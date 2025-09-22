@@ -9,3 +9,4 @@ Google Gemini:
 4. Make sign in and sign up buttons attached to form boxes 
 5. "Now make the form boxes center to the page" 
 6. "make it so that the 'sign in' and 'sign up' buttons link to the index.html with a small pop up at the top of the screen that should say "Thank you for signing in!" when the "sign in" button is clicked, and it should say "Thank you for signing up!" when the "sign up" button is clicked"
+7. Analyze the HTML and CSS of the Contact Page (gave suggestions on display and included JS for character counter and thank you pop up for submitting comment)
