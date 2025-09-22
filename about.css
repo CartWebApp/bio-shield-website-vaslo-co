@@ -70,7 +70,7 @@ main-nav input[type="search"] {
 
 /* --- Hero Section --- */
 .hero {
-    background-image: linear-gradient(rgba(0, 80, 0, 0.6), rgba(0, 80, 0, 0.6)), url('https://placehold.co/1200x400/228b22/ffffff?text=Lush+Forest');
+    background-image: linear-gradient(rgba(0, 80, 0, 0.6), rgba(0, 80, 0, 0.6)), url('/images/forest.jpg');
     background-size: cover;
     background-position: center;
     color: white;
