@@ -167,7 +167,7 @@ h2 {
 /* Initially hide the register form behind the login form */
 #register-form {
     z-index: 1;
-    transform: translateX(100%);
+    transform: translateX(80%);
     opacity: 0;
     pointer-events: none;
 }
@@ -186,12 +186,13 @@ h2 {
     transform: translateX(0);
     opacity: 1;
     pointer-events: auto;
+    translate: -.5rem;
 }
 
 /* When inactive, move the login form out of view */
 #login-form.inactive {
     z-index: 1;
-    transform: translateX(-100%);
+    transform: translateX(-80%);
     opacity: 0;
     pointer-events: none;
 }
