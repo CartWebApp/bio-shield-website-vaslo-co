@@ -2,7 +2,7 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background: rgba(134, 176, 132, 0.957);
+    background: rgb(70, 150, 70);
     display:block;
     width: 100%;
     line-height: 1.6;
@@ -87,7 +87,7 @@ main-nav input[type="search"] {
 
 /* --- Review Section --- */
 #reviews-section {
-    max-width: 900px;
+    max-width: 1100px;
     margin: 2rem auto; /* Centers the section and adds space */
     padding: 2rem;
     background-color: #f4f4f4;
@@ -248,4 +248,173 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    min-height: 106vh; /* Vertical height of the hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Sets your existing image as a scalable background */
+    background-image: url('/images/outdoors.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+/* Creates a dark overlay for better text readability */
+.hero::before { 
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Hero Content Container */
+.hero-content {
+    position: relative; /* Ensures this appears above the dark overlay */
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Main Call-to-Action Button --- */
+.cta-button {
+    background-color: rgb(0, 105, 0);
+    color: white !important; /* Overrides other link colors */
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    border: 2px solid transparent;
+}
+
+.cta-button:hover {
+    background-color: rgb(0, 70, 0);
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* --- "Why Us?" Features Section --- */
+.why-us-section {
+    padding: 4rem 1rem;
+    background-color: rgba(134, 172, 132, 0.957);
+    text-align: center;
+}
+
+.why-us-section h2 {
+    font-size: 2.5rem;
+    color: rgb(0, 100, 0);
+    margin-bottom: 3rem;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    flex-basis: 30%;
+    min-width: 280px;
+    padding: 1.5rem;
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: rgb(0, 105, 0);
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #141414;
+}
+
+/* --- Page Link Sections (About & Contact Teasers) --- */
+.page-link-section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.page-link-section .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-link-section h2 {
+    font-size: 2.5rem;
+    color: rgb(0, 50, 0);
+}
+
+.page-link-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #141414;
+}
+
+.about-teaser {
+    background-color: rgb(40, 150, 40); /* Light green tint */
+}
+
+.contact-teaser {
+    background-color: rgba(134, 172, 132, 0.957); /* Matches review section */
+}
+
+/* Secondary button style for teasers */
+.cta-button.secondary {
+    background-color: rgb(34, 82, 34);
+    color: rgb(227, 243, 86) !important;
+    border: 2px solid rgb(0, 50, 0);
+}
+
+.cta-button.secondary:hover {
+    background-color: rgb(0, 54, 0);
+    color: white !important;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
 }
