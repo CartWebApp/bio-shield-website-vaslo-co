@@ -316,7 +316,7 @@ footer p {
 /* --- "Why Us?" Features Section --- */
 .why-us-section {
     padding: 4rem 1rem;
-    background-color: rgba(134, 172, 132, 0.957);
+    background-color: #86ac84f4;
     text-align: center;
 }
 
@@ -341,8 +341,8 @@ footer p {
 }
 
 .feature-icon {
-    width: 60px;
-    height: 60px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 1rem;
 }
 
