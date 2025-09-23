@@ -18,3 +18,5 @@ Google Gemini:
 11. Make a review page for the home page
 12. Make short product descriptions (for all 6 products)
 13. Make the appearance of the products page modern (+edits)
+14. Making the Cart page more modern (ended up only changing the edge of the borders)
+15. Make submissions in the search bar lead the user to the products page
